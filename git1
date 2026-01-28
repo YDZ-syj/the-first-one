@@ -1,0 +1,19 @@
+# 克隆仓库
+git clone https://github.com/YDZ-syj/the-first-one.git
+cd the-first-one
+
+# 创建文件
+echo "firest-create" >> README.md
+echo "print('Hello Git')" >> main.py
+
+# 提交更改
+git add .
+git commit -m "初始化项目"
+git push origin main
+
+# 创建新功能分支
+git checkout -b feature/new-feature
+# 修改文件...
+git add .
+git commit -m "添加新功能"
+git push origin feature/new-feature
